@@ -1,78 +1,73 @@
-# Full‑Stack Ecommerce Platform Tutorial
 
-<div align="center">
-  <br />
-  <a href="https://youtu.be/DLeAPn5-TIA" target="_blank">
-    <img src="./banner.png" alt="Project Banner">
-  </a>
-  <br />
-  <div>
-    <img src="https://img.shields.io/badge/-Next.js-000?style=for-the-badge&logo=next.js" alt="Next.js" />
-    <img src="https://img.shields.io/badge/-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/-Stripe-6772e5?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-    <img src="https://img.shields.io/badge/-Zustand-000?style=for-the-badge" alt="Zustand" />
-  </div>
-  <h3 align="center">Build a Modern Ecommerce Platform</h3>
-  <div align="center">
-    Follow along with our detailed tutorial on 
-    <a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank"><b>YouTube</b></a>
-  </div>
-  <br />
-</div>
+# 🛒 Modern Next.js E-Commerce Application
 
-## 📋 Table of Contents
+A high-performance, responsive e-commerce platform built with Next.js 15, Tailwind CSS v4, TypeScript, and integrated with Stripe for seamless payment processing.
 
-1. [Introduction](#introduction)
-2. [Tech Stack](#tech-stack)
-3. [Features](#features)
-4. [Quick Start](#quick-start)
-5. [Code Snippets](#code-snippets)
-6. [Assets & More](#assets--more)
-
-## 🚀 Introduction
-
-In this video tutorial, you'll learn how to build a fully functional ecommerce platform using modern web technologies such as Next.js 15, Tailwind CSS v4, Stripe for payments, and Zustand for state management. This project focuses on building a sleek, responsive frontend with a secure payment flow—without using a backend database like Prisma, Postgres, or Neon.
-
-Watch the tutorial on [YouTube](https://youtu.be/YOUR_VIDEO_LINK).
+---
 
 ## ⚙️ Tech Stack
 
-- **Next.js 15** – For server components and modern routing
-- **Tailwind CSS v4** – For rapid, responsive styling using a CSS‑first configuration
-- **TypeScript** – For type safety and modern JavaScript features
-- **Stripe** – For product management and payment processing
-- **Zustand** – For lightweight client‑side state management
+* **Framework:** **Next.js 15** (App Router, React Server Components)
+* **Styling:** **Tailwind CSS v4** (CSS-first configuration, rapid utility-first styling)
+* **Language:** **TypeScript** (Strict type safety, robust developer experience)
+* **State Management:** **Zustand** (Ultra-lightweight, high-performance client-side store)
+* **Payments:** **Stripe SDK** (Secure, production-ready checkout workflows)
 
-## ⚡️ Features
+---
 
-- **Dynamic Product Carousel:**  
-  A landing page featuring an auto‑cycling carousel that showcases your top products.
+## ⚡️ Key Features
 
-- **Responsive Product Pages:**  
-  Detailed pages with interactive plus/minus buttons to adjust item quantities in the cart.
+* **Interactive Product Carousel:** An auto-cycling, responsive hero carousel featuring top-tier products.
+* **Dynamic Cart System:** Real-time state management utilizing Zustand to keep the navigation bar cart count synced across client interactions.
+* **Intuitive Product UI:** Detailed product pages with precise interactive quantity adjusters (+/- triggers).
+* **Stripe Integration:** Production-grade checkout pipeline leveraging Stripe's secure hosted payment gateways.
+* **Modern Aesthetics:** Clean, minimalist UI design modeled after popular design systems like `shadcn/ui`.
 
-- **Real‑Time Cart State:**  
-  A live-updating cart icon in the navbar using Zustand.
+---
 
-- **Seamless Stripe Checkout:**  
-  A secure checkout process powered by Stripe's API.
+## 🚀 Quick Start
 
-- **Modern UI:**  
-  A sleek, professional design built with Tailwind CSS v4 and shadcn‑inspired UI components.
-
-## 👌 Quick Start
+Follow these steps to get your local development environment up and running.
 
 ### Prerequisites
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
+Ensure you have the following installed on your machine:
 
-### Cloning the Repository
+* [Node.js](https://nodejs.org/en/) *(v18.x or higher recommended)*
+* [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+* [Git](https://git-scm.com/)
 
-Run the following commands in your terminal:
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ronniee7/your-ecommerce-repo.git
-cd your-ecommerce-repo
+git clone https://github.com/ronniee7/Ecommerce-App.git
+cd Ecommerce-App
+
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+
+```
+
+### 3. Environment Setup
+
+Create a `.env.local` file in the root of your project directory and add your Stripe API keys:
+
+```env
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+```
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+
+```
+
+Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your browser to view the application in action.
